@@ -1,3 +1,5 @@
+require: rubocop-rspec
+
 AllCops:
   DisplayCopNames: true
 
@@ -5,10 +7,16 @@ AllCops:
 
 Metrics/BlockLength:
   Exclude:
+    - spec/**/*_spec.rb
     - memoria.gemspec
 
 Metrics/LineLength:
   Max: 120
+
+# ----------------------- RSpec -----------------------
+
+RSpec/NestedGroups:
+  Enabled: false
 
 # ----------------------- Style -----------------------
 
