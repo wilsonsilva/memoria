@@ -1,4 +1,4 @@
-require "memoria/version"
+require 'memoria/version'
 
 # Encapsulates all the code of the gem.
 module Memoria
