@@ -1,6 +1,6 @@
-
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'memoria/version'
 
 Gem::Specification.new do |spec|
@@ -35,4 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.55'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.25'
   spec.add_development_dependency 'simplecov', '~> 0.16'
+  spec.add_development_dependency 'yard', '~> 0.9'
+  spec.add_development_dependency 'yard-junk', '~> 0.0.7'
+  spec.add_development_dependency 'yardstick', '~> 0.9'
 end
