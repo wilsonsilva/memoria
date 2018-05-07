@@ -22,7 +22,7 @@ task default: :spec
 CLOBBER.include('coverage', '.rspec_status')
 
 # Remove the report on rake clobber
-CLEAN.include('measurements')
+CLEAN.include('measurements', 'doc', '.yardoc', 'tmp')
 
 desc 'Run spec with coverage'
 task :coverage do
