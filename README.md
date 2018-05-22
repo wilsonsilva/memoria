@@ -74,6 +74,15 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version,
 push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+### Architecture
+
+Memoria was designed using a modular plugin architecture. The core part of the gem has a single responsibility:
+manage snapshots. Every test framework integration is done through a self-contained plugin. Plugins depend on the core,
+but the core is unaware of the plugins. This allows me to extract the plugins into their own gems later, and
+add new plugins with ease.
+
+![Class Diagram](https://github.com/wilsonsilva/memoria/blob/master/documentation/class-diagram.svg)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/wilsonsilva/memoria.
