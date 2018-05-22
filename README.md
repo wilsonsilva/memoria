@@ -5,11 +5,11 @@
 [![Dependency Status](https://gemnasium.com/wilsonsilva/memoria.svg)](https://gemnasium.com/wilsonsilva/memoria)
 [![security](https://hakiri.io/github/wilsonsilva/memoria/master.svg)](https://hakiri.io/github/wilsonsilva/memoria/master)
 
-Asserts the result of a given test by generating a rendered representation of its output. Inspired by Jest.
+Asserts the result of a given test by generating a rendered representation of its output. Inspired by Jest and VCR.
 
 The first time your test is run, a representation of your expected output is saved to a file. The next time you
 run the same test, a diff runs between a new and the previously stored snapshot. If there are no differences the test
-passes, otherwise the test fails and the resulting diff is returned.
+passes, otherwise the test fails and the resulting diff is displayed.
 
 ## Installation
 
@@ -30,6 +30,20 @@ Or install it yourself as:
 ## Usage
 
 ### RSpec
+
+You can configure RSpec's integration in `spec_helper.rb`. Require `memoria/rspec` then run `Memoria.configure`:
+
+```ruby
+Memoria.configure do |config|
+  config.configure_rspec_hooks
+  config.include_rspec_matchers
+end
+```
+
+The configuration above does two things:
+- Includes the matcher `match_snapshot` in your RSpec test suite.
+- Configures RSpec hooks to create snapshots named after the full spec example's description.
+
 Use the provided matcher `match_snapshot` to verify if the expected output matches a previously recorded snapshot.
 
 ```ruby
@@ -40,10 +54,16 @@ By default the snapshots will be stored in `spec/fixtures/snapshots`, but you ca
 `snapshot_directory`:
 
 ```ruby
-RSpec.configure do |config|
-  config.snapshot_directory = 'spec/fixtures/snapshots'
+Memoria.configure do |config|
+  config.snapshot_directory = 'spec/snapshots'
 end
 ```
+
+### Cucumber
+Under development.
+
+### Minitest
+Under development.
 
 ## Development
 
