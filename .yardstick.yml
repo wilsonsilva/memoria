@@ -2,25 +2,71 @@ threshold: 100
 rules:
   ApiTag::Presence:
     enabled: true
-    exclude: []
+    exclude:
+      - Memoria::Configuration#validate_setting_existence
+      - Memoria::Configuration#validate_record_mode
+      - Memoria::Configuration#validate_snapshot_extension
+      - Memoria::SnapshotSaver#configuration
+      - Memoria::SnapshotSaver#absolute_path_to_file
+      - Memoria::SnapshotSaver#sanitized_file_name_from
+      - Memoria::SnapshotSaver#file_extension
+      - Memoria::SnapshotSaver#storage_location
+      - Memoria::RSpec::MetadataParser#find_description_in
+      - Memoria::RSpec::MetadataParser#find_example_group_in
   ApiTag::Inclusion:
     enabled: true
-    exclude: []
+    exclude:
+      - Memoria::Configuration#validate_setting_existence
+      - Memoria::Configuration#validate_record_mode
+      - Memoria::Configuration#validate_snapshot_extension
+      - Memoria::SnapshotSaver#configuration
+      - Memoria::SnapshotSaver#absolute_path_to_file
+      - Memoria::SnapshotSaver#sanitized_file_name_from
+      - Memoria::SnapshotSaver#file_extension
+      - Memoria::SnapshotSaver#storage_location
+      - Memoria::RSpec::MetadataParser#find_description_in
+      - Memoria::RSpec::MetadataParser#find_example_group_in
   ApiTag::ProtectedMethod:
     enabled: true
     exclude: []
   ApiTag::PrivateMethod:
-    enabled: true
-    exclude: []
+    enabled: false
   ExampleTag:
     enabled: true
-    exclude: []
+    exclude:
+      - Memoria::Errors::DuplicateSetting#message
+      - Memoria::Errors::InvalidConfiguration#message
+      - Memoria::Errors::InvalidRecordMode#message
+      - Memoria::Errors::InvalidSnapshotExtension#message
+      - Memoria::Configuration#snapshot_directory
+      - Memoria::Configuration#snapshot_record_mode
+      - Memoria::Configuration#snapshot_extension
+      - Memoria::Configuration#snapshot_directory=
+      - Memoria::Configuration#snapshot_record_mode=
+      - Memoria::Configuration#snapshot_extension=
+      - Memoria::Configuration#validate_setting_existence
+      - Memoria::Configuration#validate_record_mode
+      - Memoria::Configuration#validate_snapshot_extension
+      - Memoria::SnapshotSaver#configuration
+      - Memoria::SnapshotSaver#absolute_path_to_file
+      - Memoria::SnapshotSaver#sanitized_file_name_from
+      - Memoria::SnapshotSaver#file_extension
+      - Memoria::SnapshotSaver#storage_location
+      - Memoria::RSpec::MetadataParser#find_description_in
+      - Memoria::RSpec::MetadataParser#find_example_group_in
   ReturnTag:
     enabled: true
-    exclude: []
+    exclude:
+      - Memoria::Configuration#validate_setting_existence
+      - Memoria::Configuration#validate_record_mode
+      - Memoria::Configuration#validate_snapshot_extension
   Summary::Presence:
     enabled: true
-    exclude: []
+    exclude:
+      - Memoria::Configuration#snapshot_directory=
+      - Memoria::Configuration#snapshot_directory
+      - Memoria::Configuration#snapshot_record_mode
+      - Memoria::Configuration#snapshot_extension
   Summary::Length:
     enabled: false
   Summary::Delimiter:

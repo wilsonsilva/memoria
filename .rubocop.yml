@@ -18,7 +18,17 @@ Metrics/LineLength:
 RSpec/NestedGroups:
   Enabled: false
 
+RSpec/DescribeClass:
+  Exclude:
+    - spec/memoria/rspec_spec.rb
+    - spec/memoria/rspec/matcher_spec.rb
+
 # ----------------------- Style -----------------------
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Style/ModuleFunction:
+  Exclude:
+    - lib/memoria.rb
+    - lib/memoria/rspec/metadata_parser.rb

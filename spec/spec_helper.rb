@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'simplecov'
 require 'simplecov-console'
+require 'pry'
 
 SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start do
@@ -9,6 +10,8 @@ SimpleCov.start do
 end
 
 require 'memoria'
+require 'memoria/rspec'
+require 'support/test_helpers/file_system'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -20,4 +23,12 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.include TestHelpers::FileSystem
+end
+
+Memoria.configure do |config|
+  config.snapshot_directory = 'spec/fixtures'
+  config.configure_rspec_hooks
+  config.include_rspec_matchers
 end
