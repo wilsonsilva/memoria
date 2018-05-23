@@ -7,15 +7,15 @@
 - [ ] Find and delete unused snapshots
 
 ## Framework integrations
-- [ ] `RSpec`
+- [x] `RSpec`
 - [ ] `Minitest`
 - [ ] `Cucumber`
 
 ## Persistence
-- [ ] Filesystem
+- [x] Filesystem
 
 ## Serialisation
-- [ ] Plain text (WYSIWYG)
+- [x] Plain text (WYSIWYG)
 - [ ] Compressed
 
 ## Other
