@@ -1,6 +1,6 @@
 # Memoria
 
-[![Gem Version](https://badge.fury.io/rb/memoria.svg)](http://badge.fury.io/rb/memoria)
+[![Gem Version](https://badge.fury.io/rb/memoria.svg)](https://badge.fury.io/rb/memoria)
 [![Build Status](https://travis-ci.org/wilsonsilva/memoria.svg?branch=master)](https://travis-ci.org/wilsonsilva/memoria)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ffa08ae5daf70c87c68f/maintainability)](https://codeclimate.com/github/wilsonsilva/memoria/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ffa08ae5daf70c87c68f/test_coverage)](https://codeclimate.com/github/wilsonsilva/memoria/test_coverage)
