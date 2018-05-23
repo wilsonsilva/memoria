@@ -17,6 +17,7 @@ before_script:
 scripts:
   - bundle exec rspec
   - bundle exec rubocop
+  - bundle exec rake yard:junk
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
