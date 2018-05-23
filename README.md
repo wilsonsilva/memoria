@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/wilsonsilva/memoria.svg?branch=master)](https://travis-ci.org/wilsonsilva/memoria)
 [![Dependency Status](https://gemnasium.com/wilsonsilva/memoria.svg)](https://gemnasium.com/wilsonsilva/memoria)
 [![security](https://hakiri.io/github/wilsonsilva/memoria/master.svg)](https://hakiri.io/github/wilsonsilva/memoria/master)
+[![Inline docs](http://inch-ci.org/github/wilsonsilva/memoria.svg?branch=master)](http://inch-ci.org/github/wilsonsilva/memoria)
 
 Asserts the result of a given test by generating a rendered representation of its output. Inspired by Jest and VCR.
 
