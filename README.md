@@ -31,8 +31,6 @@ Or install it yourself as:
 
 ## Usage
 
-### RSpec
-
 You can configure RSpec's integration in `spec_helper.rb`. Require `memoria/rspec` then run `Memoria.configure`:
 
 ```ruby
@@ -60,12 +58,6 @@ Memoria.configure do |config|
   config.snapshot_directory = 'spec/snapshots'
 end
 ```
-
-### Cucumber
-Under development.
-
-### Minitest
-Under development.
 
 ## Development
 
