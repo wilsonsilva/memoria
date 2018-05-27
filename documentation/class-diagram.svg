@@ -34,12 +34,6 @@
       <text text-anchor='start' x='22.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>snapshot_exists?()</text>
     </g>
   </g>
-  <g transform='translate(247.0,55.0)' id='_pjwTmUADEDaXxvbZkv6C9Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='90.0px' y='0.0' stroke-width='1.0' fill='url(#gradient-ffffff-eeeeee)' stroke='rgb(187, 187, 187)' look='allInOne' height='42.0px'/>
-    <text font-weight='bold' text-anchor='middle' x='45.0' y='18.0' font-size='12' fill='rgb(105, 105, 105)'>« Interface »</text>
-    <text font-weight='bold' text-anchor='middle' x='45.0' y='35.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Snapshot</text>
-    <line y1='42.0' x1='0.0' y2='42.0' x2='90.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
-  </g>
   <g transform='translate(192.0,234.0)' id='_pjwTkkADEDaXxvbZkv6C9Q'>
     <rect rx='3.0' ry='3.0' x='0.0' width='220.0px' y='0.0' stroke-width='1.0' fill='url(#gradient-ffffff-eeeeee)' stroke='rgb(187, 187, 187)' look='allInOne' height='155.0px'/>
     <text font-weight='bold' text-anchor='middle' x='110.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Memoria</text>
@@ -221,9 +215,6 @@
     <polyline transform='translate(828.0,154.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
     <line y1='184.0' x1='828.0' y2='154.0' x2='828.0' stroke-dasharray='1, 2' id='_pj2aP0ADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
-  <g id='_pjsCLEADEDaXxvbZkv6C9Q'>
-    <line y1='128.0' x1='292.0' y2='112.0' x2='292.0' stroke-dasharray='1, 2' id='_pj1zJ0ADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
   <g id='_pjvFcUADEDaXxvbZkv6C9Q'>
     <polyline transform='translate(507.0,154.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
     <line y1='184.0' x1='507.0' y2='154.0' x2='507.0' stroke-dasharray='1, 2' id='_pj3oWEADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
@@ -237,9 +228,6 @@
   </g>
   <g id='_pjt3WUADEDaXxvbZkv6C9Q'>
     <line y1='662.0' x1='761.0' y2='662.0' x2='762.0' stroke-dasharray='1, 2' id='_pj1MF0ADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_pjsCLEADEDaXxvbZkv6C9Q'>
-    <line y1='112.0' x1='292.0' y2='113.0' x2='292.0' stroke-dasharray='1, 2' id='_pj1zKkADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_pjsCIEADEDaXxvbZkv6C9Q'>
     <line y1='521.0' x1='640.0' y2='521.0' x2='640.0' stroke-dasharray='1, 2' id='_pj0lBkADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
@@ -283,10 +271,6 @@
   <g id='_pjsCIkADEDaXxvbZkv6C9Q'>
     <polyline transform='translate(590.0,432.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
     <line y1='519.0' x1='590.0' y2='432.0' x2='590.0' stroke-dasharray='1, 2' id='_pjz98EADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_pjsCLEADEDaXxvbZkv6C9Q'>
-    <line y1='113.0' x1='292.0' y2='97.0' x2='292.0' stroke-dasharray='1, 2' id='_pj1zLEADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polygon transform='translate(292.0,97.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-4.0,12.0 0.0,0.0 4.0,12.0'/>
   </g>
   <g id='_pjueYkADEDaXxvbZkv6C9Q'>
     <line y1='230.0' x1='828.0' y2='184.0' x2='828.0' stroke-dasharray='1, 2' id='_pj3BQUADEDaXxvbZkv6C9Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
