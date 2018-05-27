@@ -18,6 +18,8 @@ module Memoria
     # @example
     #   snapshot = Snapshot.new('listing-all-users')
     #
+    # @param [String] name The storage key (name) of the snapshot.
+    #
     # @return [Snapshot] An instance of +Snapshot+.
     #
     # @api public
