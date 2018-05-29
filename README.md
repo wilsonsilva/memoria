@@ -83,6 +83,9 @@ push git commits and tags, and push the `.gem` file to [rubygems.org](https://ru
 
 ### Architecture
 
+Martin Fowler defines software architecture as those decisions which are both important and hard to change. Since these
+decisions are hard to change, we need to be sure that our foundational priorities are well-served by these decisions.
+
 Memoria was designed using a modular plugin architecture. The core part of the gem has a single responsibility:
 manage snapshots. Every test framework integration is done through a self-contained plugin. Plugins depend on the core,
 but the core is unaware of the plugins. This allows me to extract the plugins into their own gems later, and
