@@ -6,7 +6,7 @@ env:
     - CC_TEST_REPORTER_ID=f9b83e168978e0bdefdb84b04fcb48eae2cf6d6b804ddf198cadef381b6ec06a
 
 rvm:
-  - 2.5.0
+  - 2.7.1
 
 before_install: gem install bundler -v 1.16.1
 
