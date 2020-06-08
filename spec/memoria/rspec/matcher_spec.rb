@@ -14,6 +14,26 @@ RSpec.describe 'Memoria::RSpec::Matcher' do
       end
     end
 
+    context 'when the saved snapshot is a template', snapshot: true do
+      let(:output) { 'Thanos the First' }
+
+      example 'and the params are correct' do
+        expect(output).to match_snapshot(regnal_name: 'the First')
+      end
+
+      example 'and the params are incorrect' do
+        expect(output).not_to match_snapshot(name: 'the First')
+      end
+
+      example 'and there are no params' do
+        expect(output).not_to match_snapshot
+      end
+
+      example 'and there is a non-keyword parameter' do
+        expect(output).not_to match_snapshot('the First')
+      end
+    end
+
     context 'when the snapshot does not exist', snapshot: true do
       let(:snapshot_saver) { instance_double('Memoria::SnapshotSaver', snapshot_exists?: false, write: nil) }
 

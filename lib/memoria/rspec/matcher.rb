@@ -1,6 +1,6 @@
 require 'rspec/expectations'
 
-RSpec::Matchers.define :match_snapshot do
+RSpec::Matchers.define :match_snapshot do |keyword_args|
   diffable
 
   match do |actual|
@@ -8,6 +8,7 @@ RSpec::Matchers.define :match_snapshot do
 
     if snapshot_saver.snapshot_exists?(snapshot_name)
       @expected = snapshot_saver.read(snapshot_name)
+      keyword_args&.each_pair { |k, v| @expected.gsub!(/{{#{k}}}/, v) } if keyword_args.is_a?(Hash)
       expect(expected).to eq(actual)
     else
       snapshot_saver.write(snapshot_name, actual)
