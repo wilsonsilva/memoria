@@ -33,6 +33,7 @@ module Memoria
     def snapshot_exists?(file_name)
       location = absolute_path_to_file(file_name)
       return false if location.nil?
+
       File.exist?(location)
     end
 
@@ -55,6 +56,7 @@ module Memoria
     def read(file_name)
       path = absolute_path_to_file(file_name)
       return nil unless File.exist?(path)
+
       File.read(path)
     end
 
@@ -96,6 +98,7 @@ module Memoria
     #
     def absolute_path_to_file(file_name)
       return nil unless storage_location
+
       absolute_file_name = File.join(storage_location, sanitized_file_name_from(file_name) + file_extension)
       File.expand_path(absolute_file_name)
     end

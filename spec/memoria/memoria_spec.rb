@@ -1,9 +1,9 @@
 RSpec.describe Memoria do
+  after { described_class.snapshots.clear }
+
   it 'has a version number' do
     expect(described_class::VERSION).not_to be nil
   end
-
-  after { described_class.snapshots.clear }
 
   describe '#current_snapshot' do
     it 'exposes the last recorded snapshot' do
