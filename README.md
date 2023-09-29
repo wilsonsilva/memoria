@@ -30,9 +30,11 @@ Or install it yourself as:
 
 ## Usage
 
-You can configure RSpec's integration in `spec_helper.rb`. Require `memoria/rspec` then run `Memoria.configure`:
+### 1. Configure `spec_helper.rb`:
 
 ```ruby
+require 'memoria/rspec'
+
 Memoria.configure do |config|
   config.configure_rspec_hooks
   config.include_rspec_matchers
@@ -40,14 +42,69 @@ end
 ```
 
 The configuration above does two things:
-- Includes the matcher `match_snapshot` in your RSpec test suite.
 - Configures RSpec hooks to create snapshots named after the full spec example's description.
+- Includes the matcher `match_snapshot` in your RSpec test suite.
 
-Use the provided matcher `match_snapshot` to verify if the expected output matches a previously recorded snapshot.
+### 2. Add snapshot metadata to your test
+
+Add `snapshot: true` to any `describe`, `context` or `it` block to generate a snapshot for that test then use the
+provided matcher `match_snapshot` to verify if the expected output matches a previously recorded snapshot.
 
 ```ruby
-expect(view).to match_snapshot
+RSpec.describe Calendario::Calendar do
+  let(:calendar) { described_class.new }
+
+  describe '#render_january' do
+    it 'renders the month of January', snapshot: true do
+      rendered = calendar.render_january
+      expect(rendered.to_s).to match_snapshot
+    end
+  end
+end
 ```
+
+### 3. Generate the snapshot
+
+Run the tests to generate the snapshot. The tests will pass and the snapshot will be stored in a `snap` file:
+
+```
+bundle exec rspec
+
+Calendario::Calendar
+  renders the month of january
+    Generated snapshot: Calendario::Calendar/renders the month of January
+
+Finished in 0.02001 seconds (files took 0.22817 seconds to load)
+1 example, 0 failures
+```
+
+`spec/fixtures/snapshots/Calendario_Calendar/_render_january/renders_the_month_of_january.snap`:
+
+```
+      January
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30 31
+```
+
+### 4. Compare the output with the snapshot
+
+Run the tests again to compare the output with the snapshot. The tests will pass again:
+
+```
+bundle exec rspec
+
+Calendario::Calendar
+  renders the month of january
+
+Finished in 0.02103 seconds (files took 0.21164 seconds to load)
+1 example, 0 failures
+```
+
+### Configuring the snapshot directory
 
 By default the snapshots will be stored in `spec/fixtures/snapshots`, but you can change this with the setting
 `snapshot_directory`:
@@ -65,7 +122,7 @@ prompt that will allow you to experiment. The health and maintainability of the 
 Rake tasks to test, lint and audit the gem for security vulnerabilities and documentation:
 
 ```
-rake bundle:audit          # Checks for vulnerable versions of gems 
+rake bundle:audit          # Checks for vulnerable versions of gems
 rake qa                    # Test, lint and perform security and documentation audits
 rake rubocop               # Lint the codebase with RuboCop
 rake rubocop:auto_correct  # Auto-correct RuboCop offenses
