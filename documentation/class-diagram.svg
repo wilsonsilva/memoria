@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='-13 -11 978 780' xmlns:xlink='http://www.w3.org/1999/xlink' width='978.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='780.0px'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-13 -11 978 780' xmlns:xlink='http://www.w3.org/1999/xlink' width='978.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='780.0px' style="background-color:white">
   <defs>
 <style type='text/css'><![CDATA[svg text {text-rendering: geometricPrecision;}]]></style>    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='gradient-ffffff-eeeeee' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
