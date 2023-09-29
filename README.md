@@ -65,19 +65,20 @@ end
 
 ### 3. Generate the snapshot
 
-Run the tests to generate the snapshot. The tests will pass and the snapshot will be stored in a `snap` file:
+Run the tests to generate the snapshot:
 
 ```
 bundle exec rspec
 
 Calendario::Calendar
   renders the month of january
-    Generated snapshot: Calendario::Calendar/renders the month of January
+    Generated snapshot: Calendario::Calendar/renders the month of January <--- NOTICE THIS LINE
 
 Finished in 0.02001 seconds (files took 0.22817 seconds to load)
 1 example, 0 failures
 ```
 
+The tests will pass and the snapshot will be stored in a `snap` file:
 `spec/fixtures/snapshots/Calendario_Calendar/_render_january/renders_the_month_of_january.snap`:
 
 ```
