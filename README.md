@@ -147,7 +147,7 @@ manage snapshots. Every test framework integration is done through a self-contai
 but the core is unaware of the plugins. This allows me to extract the plugins into their own gems later, and
 add new plugins with ease.
 
-![Class Diagram](https://github.com/wilsonsilva/memoria/blob/master/documentation/class-diagram.svg)
+![Class Diagram](https://github.com/wilsonsilva/memoria/blob/main/documentation/class-diagram.svg)
 
 ## Contributing
 
