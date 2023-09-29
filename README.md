@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/wilsonsilva/memoria.svg?branch=master)](https://travis-ci.org/wilsonsilva/memoria)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ffa08ae5daf70c87c68f/maintainability)](https://codeclimate.com/github/wilsonsilva/memoria/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ffa08ae5daf70c87c68f/test_coverage)](https://codeclimate.com/github/wilsonsilva/memoria/test_coverage)
-[![Security](https://hakiri.io/github/wilsonsilva/memoria/master.svg)](https://hakiri.io/github/wilsonsilva/memoria/master)
 [![Inline docs](http://inch-ci.org/github/wilsonsilva/memoria.svg?branch=master)](http://inch-ci.org/github/wilsonsilva/memoria)
 
 Asserts the result of a given test by generating a rendered representation of its output. Inspired by Jest and VCR.
